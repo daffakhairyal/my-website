@@ -91,7 +91,7 @@ export default function Review() {
             </div>
 
             {/* Isi Testimoni */}
-            <p className="italic">"{testimonial.review}"</p>
+            <p className="italic">&quot;{testimonial.review}&quot;</p>
           </motion.div>
         ))}
       </div>
