@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { FaPlay, FaPlus } from "react-icons/fa";
 import { SiSitepoint } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
