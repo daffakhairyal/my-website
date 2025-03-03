@@ -59,6 +59,7 @@ export default function Project() {
     <section
       ref={serviceRef}
       className="flex flex-col items-center h-full w-full pb-20 relative overflow-hidden"
+      id="project"
     >
       {/* Judul Section */}
       <div
@@ -113,7 +114,6 @@ export default function Project() {
         ))}
       </div>
         <br />
-      <a href="" className="font-semibold border-b-4 border-black hover:text-blue-950 hover:border-blue-950">See More</a>
     </section>
   );
 }

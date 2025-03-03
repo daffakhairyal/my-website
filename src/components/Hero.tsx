@@ -1,6 +1,7 @@
 import { BsLinkedin, BsInstagram, BsTiktok } from "react-icons/bs";
 import CircularText from "./CircularText";
 import heroImage from "../../public/img/me.jpg"
+import { FaGithub } from "react-icons/fa";
 
 export default function Hero() {
     const imageUrl = typeof heroImage === "string" ? heroImage : heroImage.src;
@@ -31,7 +32,7 @@ export default function Hero() {
                             </a>
                         </li>
                         <li>
-                            <a href="" className="flex items-center gap-x-2 text-xl relative group text-white hover:text-[#E1306C] transition-all duration-300">
+                            <a href="https://instagram.com/daffakhairyal" className="flex items-center gap-x-2 text-xl relative group text-white hover:text-[#E1306C] transition-all duration-300">
                                 <BsInstagram className="w-6 h-6 text-white group-hover:text-[#E1306C]" />
                                 <p className="z-10 relative">Instagram</p>
                                 <div className="w-0 h-[35px] group-hover:w-[130px] group-hover:h-[35px] absolute top-0 z-0 border-b-4 border-[#E1306C] transition-all duration-300"></div>
@@ -42,6 +43,13 @@ export default function Hero() {
                                 <BsTiktok className="w-6 h-6 text-white group-hover:text-[#69C9D0]" />
                                 <p className="z-10 relative">Tiktok</p>
                                 <div className="w-0 h-[35px] group-hover:w-[100px] group-hover:h-[35px] absolute top-0 z-0 border-b-4 border-[#69C9D0] transition-all duration-300"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/daffakhairyal" className="flex items-center gap-x-2 text-xl relative group text-white hover:text-white transition-all duration-300">
+                                <FaGithub className="w-6 h-6 text-white group-hover:text-white" />
+                                <p className="z-10 relative">Github</p>
+                                <div className="w-0 h-[35px] group-hover:w-[100px] group-hover:h-[35px] absolute top-0 z-0 border-b-4 border-white transition-all duration-300"></div>
                             </a>
                         </li>
                     </ul>

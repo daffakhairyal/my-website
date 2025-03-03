@@ -1,4 +1,5 @@
 import DetailProject from "@/components/DetailProject";
+import Footer from "@/components/Footer";
 import Review from "@/components/Review";
 
 export default function ProjectDetailPage(){
@@ -6,6 +7,7 @@ export default function ProjectDetailPage(){
         <section>
             <DetailProject/>
             <Review/>
+            <Footer/>
         </section>
     )
 }

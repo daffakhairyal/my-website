@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Content1 from "@/components/Content1"
 import Review from "@/components/Review";
+import Footer from "@/components/Footer";
 
 
 
@@ -11,6 +12,7 @@ export default function Home(){
       <Hero/>
       <Content1/>
       <Review/>
+      <Footer/>
     </section>
   )
 }

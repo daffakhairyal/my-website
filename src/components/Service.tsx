@@ -41,7 +41,7 @@ export default function Service() {
 
       {/* Tambahkan animasi pada judul */}
       <div className={`flex flex-col justify-center items-center py-10 max-w-[75%] lg:max-w-[1000px] w-full gap-y-6 relative transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-        <h1 className="text-5xl font-bold text-gray-900">My Services</h1>
+        <h1 className="text-5xl font-bold text-gray-900">My Skills</h1>
         <p className="text-center lg:max-w-[75%] italic text-gray-700">
           Creating professional, engaging, and fully responsive websites that leave a lasting impression. 
           My services are designed to help businesses establish credibility and attract more customers.
