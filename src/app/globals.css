@@ -14,8 +14,165 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+.circle{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite;
+}
+@keyframes anim {
+  0%{
+      transform:rotate(0deg);
+  }
+  100%{transform:rotate(360deg);
+  }
+}
+.text span{
+  position: absolute;
+  left:50%;
+  font-size:0.8rem;
+  font-weight: bold;
+  transform-origin: 0 50px;
+}
+.left1{
+  animation: left1 1s ease-in forwards;
+  transition: 0.5s;
+}
+
+@keyframes left1 {
+  0%{
+    transform: translateX(-3%);
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.right1{
+  animation: right1 1s ease-in forwards;
+  transition: 0.5s;
+}
+@keyframes right1 {
+  0%{
+    transform: translateX(3%);
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.up1{
+  animation: up1 0.5s ease-in forwards;
+  transition: 0.5s;
+}
+@keyframes up1 {
+  0%{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.image1{
+  transition: 0.5s;
+  animation: right1 1s ease-in-out;
+}
+.image1:hover{
+  transform: rotate(2deg);
+  scale: 105%;
+  transition: 0.5s;
+}
+/*Animasi Text*/
+.text1 {
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: 
+    text1 0.7s ease-in-out forwards,
+    move1 2.2s ease-in-out 2s forwards;
+  font-weight: bold;
+}
+
+@keyframes text1 {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10%) scale(0.98);
+    font-size: 50px;
+  }
+
+  90%{
+    transform: translate(-50%, -25%) scale(1);
+  }
+
+  95%{
+    transform: translate(-50%, -45%) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+  }
+
+  15% {
+    transform: translate(-45%, -45%);
+    font-size: 45px;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    left: 0%;
+    top: 0%;
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+/* Animasi Gambar */
+.gambar1 {
+  position: absolute;
+  animation: gambar1 0.5s ease-in-out 4.9s forwards; /* Delay 4.9s */
+  top: 50%;
+  visibility: hidden; /* Sembunyikan tanpa menghapus dari flow layout */
+  opacity: 0;
+}
+
+@keyframes gambar1 {
+  0% {
+    visibility: visible; /* Tampilkan elemen */
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
