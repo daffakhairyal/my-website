@@ -59,7 +59,7 @@ export default function Project() {
       image: "/img/wedding.png",
       description:
         "A wedding invitation website to invite your guests",
-        link: "https://dafffakhairy.github.io/",
+        link: "https://dafffaakhairy.github.io/",
     },
   ];  
 
