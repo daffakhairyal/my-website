@@ -53,6 +53,14 @@ export default function Project() {
       image: "/img/dapurgoba.png",
       link: "https://dapurgoba.github.io/",
     },
+    {
+      id: 4,
+      title: "Wedding Invitation Website",
+      image: "/img/wedding.png",
+      description:
+        "A wedding invitation website to invite your guests",
+        link: "https://dafffakhairy.github.io/",
+    },
   ];  
 
   return (

@@ -49,7 +49,18 @@ const movies = [
       description:
         "A catering business offering delicious and high-quality meals with excellent customer service.",
         stack: "HTML, CSS, JS",
-        duration: "3 months",
+        duration: "1 days",
+    },
+    {
+      id: 4,
+      title: "Wedding Invitation Website",
+      rating: "13+",
+      year: 2024,
+      image: "/img/wedding.png",
+      description:
+        "A wedding invitation website to invite your guests",
+        stack: "HTML, Tailwind CSS, JS",
+        duration: "1 days",
     },
   ];
 
@@ -83,6 +94,16 @@ const projects: Project[] = [
     link: "https://dapurgoba.github.io/",
     stack: "HTML, CSS, JS",
     duration: "3 months",
+  },
+  {
+    id: 4,
+    title: "Wedding Invitation Website",
+    image: "/img/wedding.png",
+    description:
+      "A wedding invitation website to invite your guests",
+      stack: "HTML, Tailwind CSS, JS",
+      link: "https://dafffakhairy.github.io/",
+      duration: "1 days",
   },
 ];
 
